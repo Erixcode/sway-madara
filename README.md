@@ -11,7 +11,7 @@ As I use Fedora-sway Spin some packages are installed by Default like rofi,...
     .config/rofi
     .local/bin/  --> I use wofi for application launching also the fedora logo works same, for custom scripts like fzfind or fzps including my fzbmark.py I use rofi, you can Add any scripts there
 for sway and waybar we need to download and compile mpvpaper: https://github.com/GhostNaN/mpvpaper
-check deepseek session for package dependencies
+
 
 keybindings are based on my Own preferals, Most Commons:
 
