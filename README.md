@@ -50,7 +50,7 @@ Need to install GitHub repos:
      
 packages I installed via DNF are listed here:
     
-    sudo dnf install qt5ct sway waybar meson git cmake gcc-c++ power-profiles-daemon mpv-devel wayland-devel wlroots-devel nautilus sway-wallpapers swayidle swaybg swayimg swaylock swappy slurp grim grimpicker fontawesome-fonts-all xclip fuzzel highlight wofi rofi
+    sudo dnf install qt5ct sway waybar meson git cmake gcc-c++ power-profiles-daemon mpv-devel wayland-devel wlroots-devel nautilus sway-wallpapers swayidle swaybg swayimg swaylock swappy slurp grim grimpicker fontawesome-fonts-all xclip fuzzel highlight wofi rofi fzf 
     pip install pygments
     
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/453f16aa-c08a-4e0d-88c3-452512fd02b4" />
@@ -58,10 +58,12 @@ packages I installed via DNF are listed here:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ffc2de2-87d6-4f2d-b6e8-2d0c015157a5" />
 check Art.md to get the background video and swaylock image, for background video if you have a nice hardware go with 4k if not use HD version :)
 
-I didn't add dual monitor settings because it will change from system to system
+I didn't add dual monitor settings because it will change from system to system, Also I don't like tweaking gtk themes so much, "Adwaita-dark" is the only teak I do, If you like you can also get it done via dconf-editor and other tools.
 
 Terminal also has few tricks, 
 Ctrl+t --> fuzyfind, 
-Ctrl+r --> fuzy history search
-Alt+c --> cd into folder of fuzy search results 
-cats --> bat implementation via python and highlight
+Ctrl+r --> fuzy history search, 
+Alt+c --> cd into folder of fuzy search results, 
+cats --> bat implementation via python and highlight, 
+
+Peace :)
