@@ -59,3 +59,9 @@ packages I installed via DNF are listed here:
 check Art.md to get the background video and swaylock image, for background video if you have a nice hardware go with 4k if not use HD version :)
 
 I didn't add dual monitor settings because it will change from system to system
+
+Terminal also has few tricks, 
+Ctrl+t --> fuzyfind, 
+Ctrl+r --> fuzy history search
+Alt+c --> cd into folder of fuzy search results 
+cats --> bat implementation via python and highlight
