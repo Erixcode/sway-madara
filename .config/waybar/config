@@ -1,0 +1,113 @@
+{
+  "layer": "bot",
+  "spacing": 0,
+  "height": 0,
+  "margin-bottom": 0,
+  "margin-top": 13,
+  "position": "top",
+  "margin-right": 200,
+  "margin-left": 200,
+  "modules-left": [
+    "hyprland/workspaces",
+    "sway/workspaces"
+  ],
+  "modules-center": [
+    "custom/applauncher"
+  ],
+  "modules-right": [
+    "power-profiles-daemon",
+    "network",
+    "battery",
+    "pulseaudio",
+    "bluetooth",
+    "clock",
+    "tray",
+    "sway/language",
+  ],
+ "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "tooltip": false
+  },
+  "custom/applauncher": {
+    "format": " ",   //neet to add Maple-mono-NF font https://github.com/subframe7536/maple-font/releases
+    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 15",
+    "tooltip": false
+  },
+  "tray": {
+    "spacing": 10,
+    "tooltip": false
+  },
+  "clock": {
+    "format": "󰅐  {:%H:%M}",
+    "tooltip": false
+  },
+    "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "tooltip": false
+  },
+  "network": {
+    "format-wifi": "{bandwidthDownBits} ({signalStrength}%)  ",
+    "format-ethernet": "󰈀 {bandwidthDownBits}",
+    "format-disconnected": "󰤮 No Network",
+    "interval": 5,
+    "tooltip": false,
+    "on-click": "nm-connection-editor"
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 100,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-icons": [
+      "",
+      "",
+      " "
+    ],
+    "nospacing": 1,
+    "format-muted": " ",
+    "on-click": "pavucontrol",
+    "tooltip": false
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-full": "󱈑 {capacity}%",
+    "format-icons": [
+      "󱊡",
+      "󱊢",
+      "󱊣"
+    ]
+  },
+  "bluetooth": {
+    "format": " {status}",
+    "format-connected": " {device_alias}",
+    "format-disabled": " Off",
+    "tooltip-format": "{device_enumerate}",
+    "on-click": "blueman-manager"  // Optional: Click to open GUI
+  },
+
+  "power-profiles-daemon": {
+    "format": " {icon} ",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": " ",
+      "power-saver": ""
+    }
+  },
+ 
+  "sway/language": {
+   "format": "{flag} {variant}",
+   "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+ }
+}

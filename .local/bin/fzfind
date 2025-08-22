@@ -1,0 +1,8 @@
+#!/bin/bash
+# Fast fuzzy-find using fd + wofi
+
+selected_file=$(fd --type f --hidden --exclude .git --exclude node_modules . ~ | wofi --show dmenu -p "Open File:")
+
+if [ -n "$selected_file" ]; then
+    xdg-open "$selected_file" &
+fi

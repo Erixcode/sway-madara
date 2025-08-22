@@ -1,0 +1,7 @@
+#!/bin/bash
+# List and kill a process (like a pkill fuzzy finder)
+
+process_to_kill=$(ps aux | wofi --show dmenu -p "Kill:" | awk '{print $2}')
+if [ -n "$process_to_kill" ]; then
+    kill -9 "$process_to_kill"
+fi

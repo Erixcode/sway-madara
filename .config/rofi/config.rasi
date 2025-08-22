@@ -1,0 +1,18 @@
+@import "uchiha-madara.rasi"
+
+configuration {
+    modi: "drun,run,window";
+    show-icons: false;
+    display-drun: "󰀻 Run:";
+    display-run: " Exec:";
+    display-window: " Windows:";
+    lines: 6;
+    
+    // Simple navigation - just use Tab/Shift-Tab for mode switching
+    kb-mode-next: "Tab";
+    kb-mode-previous: "Shift+Tab";
+    
+    // Clear any conflicting bindings
+    kb-element-next: "";
+    kb-element-prev: "";
+}

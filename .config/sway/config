@@ -1,0 +1,114 @@
+### Keybindin 
+#windows key = super keygs:
+set $mod Mod4
+
+# Launch terminal kitty:
+#bindsym $mod+Return exec kitty
+set $term kitty
+bindsym Control+Mod1+t exec kitty
+
+#kill window:
+bindsym $mod+q kill
+
+#Applocation windows Floating/Fullscreen:
+bindsym $mod+Shift+f floating toggle
+bindsym $mod+f fullscreen
+
+#Application Launcher Wofi:
+set $menu pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun
+bindsym $mod+r exec $menu
+set $comm pgrep rofi >/dev/null 2>&1 && killall rofi || /home/erixploit/.local/bin/erix-launcher
+bindsym $mod+d exec $comm
+# Gap between windows
+gaps inner 8
+gaps outer 8
+
+# Border width
+default_border pixel 2
+default_floating_border pixel 2
+
+#                       border    bg     text    ind    child border
+client.focused          #e67e22 #1a0a0a #ffffff #e67e22 #e67e22
+client.focused_inactive #8b0000 #1a0a0a #d8cab8 #8b0000 #8b0000
+client.unfocused        #8b0000 #1a0a0a #d8cab8 #8b0000 #8b0000
+client.urgent           #ff4500 #1a0a0a #ffffff #ff4500 #ff4500
+client.placeholder      #8b0000 #1a0a0a #d8cab8 #8b0000 #8b0000
+
+#Reload Sway:
+bindsym $mod+Shift+r reload
+
+#Exit Sway(logout):
+bindsym Mod1+Control+Delete exit
+#bindsym Mod1+Control+Delete exec swaynag -t warning -m 'Do you want to exit sway?' -B "Yes" 'swaymsg exit'
+
+###Status Bar, "Need to install waybar" first need to kill old bar then reload new bar:
+#exec_always waybar
+bar {
+    swaybar_command waybar
+}
+
+###File Explorer:
+#set $file_explorer dolphin
+set $file_explorer nautilus
+bindsym $mod+e exec $file_explorer
+
+#LockScreen:
+bindsym $mod+l exec swaylock -e -l -k --image ~/Pictures/Tsukuyomi.jpg
+
+# Screenshot 
+bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
+
+###Touchpad Settings:
+input "type:touchpad" {
+    tap enabled
+    natural_scroll disabled
+}
+
+###WorkSpaces:
+workspace 1
+workspace 2
+workspace 3
+workspace 4
+workspace 5
+workspace 6
+
+#Force to workspace 1:
+exec swaymsg workspace 1
+
+#Switch Between WorkSpaces:
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+
+#Move window Between workspaces:
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+
+#Switch Apps:
+bindsym Mod1+Tab focus next
+bindsym Mod1+Shift+Tab focus prev
+
+###Telegram Fix:
+exec "QT_QPA_PLATFORM=xcb telegram-desktop"
+
+###Video Wallpaper:
+exec pkill -x mpvpaper
+exec_always --no-startup-id "sleep 2 && mpvpaper -o '--loop-playlist' '*' ~/Pictures/Uchiha_madara.mp4"
+
+###Language:
+input "type:keyboard" {
+    xkb_layout us,ir
+}
+bindsym Control+Space input type:keyboard xkb_switch_layout next
+
+###OBS Studio and other applications related:
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+

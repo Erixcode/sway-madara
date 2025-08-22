@@ -1,0 +1,77 @@
+#!/bin/bash
+# erix-launcher - Compatible with both rofi and wofi
+
+# Function to show menu and get choice
+get_choice() {
+    local prompt="$1"
+    shift
+    local options=("$@")
+    
+    if command -v rofi &> /dev/null; then
+        printf "%s\n" "${options[@]}" | rofi -dmenu \
+            -p "󰀻 $prompt" \ # Using nerd fonts symbol 
+            -theme "~/.config/rofi/uchiha-madara.rasi" \
+            -lines 6 \
+            -width 600 \
+            -location 0 \
+            -yoffset 0
+    elif command -v wofi &> /dev/null; then
+        # Fallback wofi style with similar colors
+        printf "%s\n" "${options[@]}" | wofi --show dmenu \
+            --prompt "$prompt" \
+            --lines 6 \
+            --normal-bg="#1a1a1a" \
+            --normal-fg="#e25822" \
+            --selected-bg="#e25822" \
+            --selected-fg="#1a1a1a" \
+            --active-bg="#8b0000" \
+            --active-fg="#ffffff"
+    else
+        echo "ERROR: Neither rofi nor wofi found!" >&2
+        exit 1
+    fi
+}
+
+# Define menu options
+menu_options=(
+    "fzfind"
+    "fzps"
+    "fzbmark"
+    "shutdown"
+    "reboot"
+)
+
+# Get user choice
+choice=$(get_choice "My Cmds:" "${menu_options[@]}")
+
+# Execute based on choice
+case "$choice" in
+    # "Bluetooth")
+    #     ~/.local/bin/my-bluetooth-script
+    #     ;;
+    # "Volume Control")
+    #     ~/.local/bin/my-volume-script
+    #     ;;
+    "fzbmark")
+        # For CLI Python scripts, use a terminal
+        kitty --hold python3 /home/erixploit/.local/bin/fzbmark.py
+        ;;
+    # "Open Documents")
+    #     nautilus ~/Documents
+    #     ;;
+    # "Show System Info")
+    #     gnome-terminal --hold -- neofetch
+    #     ;;
+    "shutdown")
+        systemctl poweroff
+        ;;
+    "reboot")
+        systemctl reboot
+        ;;
+    "")
+        echo "Cancelled"
+        ;;
+    *)
+        eval "$choice"
+        ;;
+esac

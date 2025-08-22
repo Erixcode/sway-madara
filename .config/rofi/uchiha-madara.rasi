@@ -1,0 +1,165 @@
+/**
+ * Uchiha Madara Theme for Rofi - Compact Version
+ * Amber, Red, and Dark tones - NO EXTRA SPACE
+ */
+
+* {
+    // Base Colors - Uchiha Palette
+    background-color: #1a1a1a;
+    foreground-color: #e25822;
+    border-color: #8b0000;
+    selected-background-color: #e25822;
+    selected-foreground-color: #1a1a1a;
+    alternate-background-color: #2a2a2a;
+    active-background-color: #8b0000;
+    urgent-background-color: #ff4500;
+    
+    // Text
+    font: "JetBrains Mono Bold 11";
+    text-color: #e25822;
+    cursor: "default";
+    
+    // CRUSH ALL SPACING
+    spacing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window {
+    background-color: #1a1a1a;
+    location: north;
+    anchor: north;
+    width: 600px;
+    x-offset: 0;
+    y-offset: 0;
+    border: 1px;
+    border-color: #8b0000;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+mainbox {
+    background-color: @background-color;
+    border: 0px;
+    children: [inputbar, listview];
+    spacing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+inputbar {
+    background-color: @background-color;
+    padding: 4px 8px;  // Reduced vertical padding
+    border: 0px;
+    border-bottom: 1px; // Thinner border
+    border-color: @border-color;
+    children: [prompt, entry];
+    margin: 0;
+    spacing: 4px;
+}
+
+prompt {
+    background-color: inherit;
+    text-color: @selected-background-color;
+    padding: 0;
+    margin: 0;
+    vertical-align: 0.5;
+}
+
+entry {
+    background-color: inherit;
+    text-color: @foreground-color;
+    placeholder: "";
+    placeholder-color: #666666;
+    padding: 0;
+    margin: 0;
+}
+
+listview {
+    background-color: @background-color;
+    spacing: 0px;
+    padding: 0px;
+    margin: 0px;
+    scrollbar: false;    // Hide scrollbar to save space
+    cycle: true;
+    dynamic: true;
+}
+
+element {
+    background-color: inherit;
+    text-color: @foreground-color;
+    padding: 2px 8px;    // Minimal padding - CRUSHED VERTICAL SPACE
+    border: 0px;
+    margin: 0px;
+    horizontal-align: 0;
+}
+
+element selected {
+    background-color: @selected-background-color;
+    text-color: @selected-foreground-color;
+    border: 0px;
+    margin: 0px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    highlight: @selected-background-color;
+    vertical-align: 0.5;
+    horizontal-align: 0;
+}
+
+element-icon {
+    size: 0;
+    padding: 0;
+    margin: 0;
+}
+
+scrollbar {
+    width: 0;           // Completely disable scrollbar
+    handle-width: 0;
+    border: 0;
+}
+
+mode-switcher {
+    background-color: @background-color;
+    text-color: @foreground-color;
+    spacing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 2px 4px;
+    background-color: inherit;
+    text-color: inherit;
+    margin: 0;
+}
+
+button selected {
+    background-color: @selected-background-color;
+    text-color: @selected-foreground-color;
+}
+
+// Add to the end of the file - NUCAR OPTION
+message {
+    background-color: @background-color;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+overlay {
+    background-color: @background-color;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+sidebar {
+    width: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
