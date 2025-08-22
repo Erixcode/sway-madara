@@ -4,8 +4,6 @@ As I use Fedora-sway Spin some packages are installed by Default like rofi,...
     tmux plugins
     .tmux.conf
     .bashrc
-    .config/nvim
-    .config/geany
     .config/kitty
     .config/waybar
     .config/sway
