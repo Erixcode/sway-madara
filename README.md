@@ -50,3 +50,8 @@ packages I installed via DNF are listed here:
     sudo dnf install qt5ct sway waybar meson git cmake gcc-c++ power-profiles-daemon mpv-devel wayland-devel wlroots-devel nautilus sway-wallpapers swayidle swaybg swayimg swaylock swappy slurp grim grimpicker fontawesome-fonts-all xclip fuzzel highlight wofi rofi
     pip install pygments
     
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/453f16aa-c08a-4e0d-88c3-452512fd02b4" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ffc2de2-87d6-4f2d-b6e8-2d0c015157a5" />
+check Art.md to get the background video and swaylock image, for background video if you have a nice hardware go with 4k if not use HD version :)
+
