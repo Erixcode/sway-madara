@@ -1,7 +1,7 @@
 # what included:
 As I use Fedora-sway Spin some packages are installed by Default like rofi,...
 
-     tmux plugins  --> needs to install tpm and run the install_plugin script if failed just remove the folders inside plugins and relaunch the script
+     tmux plugins  --> needs to install tpm and run the install_plugins.sh script if failed just remove the folders inside plugins and relaunch the script
     .tmux.conf
     .bashrc
     .config/kitty
