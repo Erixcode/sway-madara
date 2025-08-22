@@ -39,5 +39,3 @@ export FZF_DEFAULT_OPTS="--style full --preview 'bat --color=always {}' --bind '
 source /usr/share/fzf/shell/key-bindings.bash
 # highlight Cat
 alias cats='highlight -O ansi --force'
-#File manager
-alias filemanager='xdg-open .'
