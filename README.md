@@ -1,7 +1,7 @@
 # what included:
 As I use Fedora-sway Spin some packages are installed by Default like rofi,...
 
-    tmux plugins
+     tmux plugins  --> needs to install tpm and run the install_plugin script if failed just remove the folders inside plugins and relaunch the script
     .tmux.conf
     .bashrc
     .config/kitty
@@ -9,9 +9,13 @@ As I use Fedora-sway Spin some packages are installed by Default like rofi,...
     .config/sway
     .config/wofi
     .config/rofi
-    .local/bin/  --> for wofi custom launcher, need to bind new key for this mode, includes my fzbmark.py
+    .local/bin/  --> I use wofi for application launching also the fedora log works same, for custom scripts like fzfind or fzps including my fzbmark.py I use rofi, you can Add any scripts there
 for sway and waybar we need to download and compile mpvpaper: https://github.com/GhostNaN/mpvpaper
 check deepseek session for package dependencies
+
+keybindings are based on my Own preferals, Most Commons:
+
+Super+D --> rofi, Super+r --> wofi, Super+l --> swaylock, Super+E --> nautilus, Super+q --> exit apps, Super+shift+s --> ScreenShot, Super+Shit+number --> move to Desktop, Super+number --> go to Desktop, Super+f --> FullScreen/exit FullScreen, Ctrl+Alt+Delete --> Logout, Super+Shift+r --> reload sway (be careful about mpvpaper not eat your RAM)
 
 for laptops with nvidia integrated Cards, do not use sway-nvidia it's old and will break:
 
