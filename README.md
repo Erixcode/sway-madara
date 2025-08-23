@@ -58,7 +58,7 @@ packages I installed via DNF are listed here:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ffc2de2-87d6-4f2d-b6e8-2d0c015157a5" />
 check Art.md to get the background video and swaylock image, for background video if you have a nice hardware go with 4k if not use HD version :)
 
-I didn't add dual monitor settings because it will change from system to system, Also I don't like tweaking gtk themes so much, "Adwaita-dark" is the only teak I do, If you like you can also get it done via dconf-editor and other tools.
+I didn't add dual monitor settings because it will change from system to system, Also I don't like tweaking gtk themes so much, "Adwaita-dark" is the only tweak I do, If you like you can also get it done via dconf-editor and other tools.
 
 Terminal also has few tricks, 
 Ctrl+t --> fuzyfind, 
