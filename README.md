@@ -1,5 +1,5 @@
 # what included:
-As I use Fedora-sway Spin some packages are installed by Default like rofi,...
+This is based on Fedora-sway Spin, for default packages installed, please visit Fedora42 Sway-Spin Docs : <url>https://fedoraproject.org/spins/sway</url>
 
      tmux plugins  --> needs to install tpm and run the install_plugins.sh script if failed just remove the folders inside plugins and relaunch the script
     .tmux.conf
@@ -15,7 +15,17 @@ for sway and waybar we need to download and compile mpvpaper: https://github.com
 
 keybindings are based on my Own preferals, Most Commons:
 
-Super+D --> rofi, Super+r --> wofi, Super+l --> swaylock, Super+E --> nautilus, Super+q --> exit apps, Super+shift+s --> ScreenShot, Super+Shit+number --> move to Desktop, Super+number --> go to Desktop, Super+f --> FullScreen/exit FullScreen, Ctrl+Alt+Delete --> Logout, Super+Shift+r --> reload sway (be careful about mpvpaper not eat your RAM)
+     Super+D --> rofi
+     Super+r --> wofi
+     Super+l --> swaylock
+     Super+E --> nautilus
+     Super+q --> exit apps
+     Super+shift+s --> ScreenShot
+     Super+Shit+number --> move to Desktop
+     Super+number --> go to Desktop
+     Super+f --> FullScreen/exit FullScreen
+     Ctrl+Alt+Delete --> Logout
+     Super+Shift+r --> reload sway (be careful about mpvpaper not eat your RAM)
 
 for laptops with nvidia integrated Cards, do not use sway-nvidia it's old and will break:
 
@@ -60,18 +70,22 @@ packages I installed via DNF are listed here:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/453f16aa-c08a-4e0d-88c3-452512fd02b4" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ffc2de2-87d6-4f2d-b6e8-2d0c015157a5" />
-check Art.md to get the background video and swaylock image, for background video if you have a nice hardware go with 4k if not use HD version :)
 
-I didn't add dual monitor settings because it will change from system to system, Also I don't like tweaking gtk themes so much, "Adwaita-dark" is the only tweak I do, If you like you can also get it done via dconf-editor and other tools.
+check Art.md to get the background video and swaylock image, for background video if you have a nice hardware go with 4k if not use HD version :)<br>
 
-for firefox I use <url>https://addons.mozilla.org/en-US/firefox/addon/apng-madara-uchiha/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search</url> to mach the theme, this one I do manualy and not included in the rice.
+
+I didn't add dual monitor settings because it will change from system to system, Also I don't like tweaking gtk themes so much, "Adwaita-dark" is the only tweak I do, If you like you can also get it done via dconf-editor and other tools.<br>
+
+
+for firefox I use <url>https://addons.mozilla.org/en-US/firefox/addon/apng-madara-uchiha/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search</url> to mach the theme, this one I do manualy and not included in the rice.<br>
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/32c4b8fd-aa7f-4d79-9c89-abb5b8fd1ab9" />
 
 
-Terminal also has few tricks, 
-Ctrl+t --> fuzyfind, 
-Ctrl+r --> fuzy history search, 
-Alt+c --> cd into folder of fuzy search results, 
-cats --> bat implementation via python and highlight, 
+Terminal also has few tricks:
+
+     Ctrl+t --> fuzyfind 
+     Ctrl+r --> fuzy history search
+     Alt+c --> cd into folder of fuzy search results 
+     cats --> bat implementation via python and highlight 
 
 Peace :)
