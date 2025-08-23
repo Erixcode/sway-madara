@@ -52,6 +52,8 @@ packages I installed via DNF are listed here:
     
     sudo dnf install qt5ct sway waybar meson git cmake gcc-c++ power-profiles-daemon mpv-devel wayland-devel wlroots-devel nautilus sway-wallpapers swayidle swaybg swayimg swaylock swappy slurp grim grimpicker fontawesome-fonts-all xclip fuzzel highlight wofi rofi fzf 
     pip install pygments
+
+<img width="1919" height="1080" alt="image" src="https://github.com/user-attachments/assets/6e7de62b-7d1a-4980-a9ac-685f748425e2" />
     
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/453f16aa-c08a-4e0d-88c3-452512fd02b4" />
 
@@ -59,6 +61,10 @@ packages I installed via DNF are listed here:
 check Art.md to get the background video and swaylock image, for background video if you have a nice hardware go with 4k if not use HD version :)
 
 I didn't add dual monitor settings because it will change from system to system, Also I don't like tweaking gtk themes so much, "Adwaita-dark" is the only tweak I do, If you like you can also get it done via dconf-editor and other tools.
+
+for firefox I use <url>https://addons.mozilla.org/en-US/firefox/addon/apng-madara-uchiha/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search</url> to mach the theme, this one I do manualy and not included in the rice.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/32c4b8fd-aa7f-4d79-9c89-abb5b8fd1ab9" />
+
 
 Terminal also has few tricks, 
 Ctrl+t --> fuzyfind, 
