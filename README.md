@@ -53,6 +53,8 @@ packages I installed via DNF are listed here:
     sudo dnf install qt5ct sway waybar meson git cmake gcc-c++ power-profiles-daemon mpv-devel wayland-devel wlroots-devel nautilus sway-wallpapers swayidle swaybg swayimg swaylock swappy slurp grim grimpicker fontawesome-fonts-all xclip fuzzel highlight wofi rofi fzf 
     pip install pygments
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/862d9213-ddfd-4ef4-a811-15cd916908fd" />
+
 <img width="1919" height="1080" alt="image" src="https://github.com/user-attachments/assets/6e7de62b-7d1a-4980-a9ac-685f748425e2" />
     
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/453f16aa-c08a-4e0d-88c3-452512fd02b4" />
