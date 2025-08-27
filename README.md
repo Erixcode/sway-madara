@@ -88,5 +88,5 @@ Terminal also has few tricks:
      Alt+c --> cd into folder of fuzy search results 
      cats --> bat implementation via python and highlight 
 
-Peace :)
-My initial design was not as smooth as this rice, I got inspiration of <a href=https://github.com/diinki>diinki's</a> rice to give some soul to this rice :)
+Peace :)<br>
+My initial design was not as smooth as this rice, I got inspiration of <a href=https://github.com/diinki>diinki's</a> rice to give some soul to this rice :), if you want to go deep with customization I strongly advise to check her github page :)
