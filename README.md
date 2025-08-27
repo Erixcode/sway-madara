@@ -15,8 +15,8 @@ for sway and waybar we need to download and compile mpvpaper: https://github.com
 
 keybindings are based on my Own preferals, Most Commons:
 
-     Super+D --> rofi
-     Super+r --> wofi
+     Super+D --> rofi (as custom Script launcher)
+     Super+r --> wofi (as application launcher)
      Super+l --> swaylock
      Super+E --> nautilus
      Super+q --> exit apps
