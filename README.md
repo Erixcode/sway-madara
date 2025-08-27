@@ -89,3 +89,4 @@ Terminal also has few tricks:
      cats --> bat implementation via python and highlight 
 
 Peace :)
+My initial design was not as smooth as this rice, I got inspiration of <a href=https://github.com/diinki>diinki's</a> rice to give some soul to this rice :)
