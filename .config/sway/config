@@ -14,6 +14,10 @@ bindsym $mod+q kill
 bindsym $mod+Shift+f floating toggle
 bindsym $mod+f fullscreen
 
+#split window:
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
 #Application Launcher Wofi:
 set $menu pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun
 bindsym $mod+r exec $menu
@@ -36,6 +40,12 @@ client.placeholder      #8b0000 #1a0a0a #d8cab8 #8b0000 #8b0000
 
 #Reload Sway:
 bindsym $mod+Shift+r reload
+
+#configuration for hjkl as arrow key:
+set $left h
+set $down j
+set $up k
+set $right l
 
 #Exit Sway(logout):
 bindsym Mod1+Control+Delete exit
