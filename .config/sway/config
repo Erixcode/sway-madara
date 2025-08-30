@@ -70,8 +70,10 @@ bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 
 ###Touchpad Settings:
 input "type:touchpad" {
+    dwt enabled
     tap enabled
     natural_scroll disabled
+    middle_emulation enabled
 }
 
 ###WorkSpaces:
