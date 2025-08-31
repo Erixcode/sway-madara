@@ -10,7 +10,7 @@ This is based on Fedora-sway Spin, for default packages installed, please visit 
     .config/wofi
     .config/rofi
     .local/bin/  --> I use wofi for application launching also the fedora logo at mid top bar works the same, for custom scripts like fzfind or fzps including my fzbmark.py I use rofi, you can Add any scripts there
-for sway and waybar we need to download and compile mpvpaper: https://github.com/GhostNaN/mpvpaper
+for live background we need to download and compile mpvpaper: https://github.com/GhostNaN/mpvpaper
 
 
 keybindings are based on my Own preferals, Most Commons:
